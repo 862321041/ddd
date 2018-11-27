@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="http://www.baidu.com">
+		<table border="1" cellspacing="0" 
+			align="center">
+			<caption style="font-size: 20px;">注册表单</caption>
+
+			<tr>
+				<td>用户名：</td>
+				<td colspan="2"><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td colspan="2"><input type="password" name="pwd"></td>
+			</tr>
+			<tr>
+				<td>确认密码：</td>
+				<td colspan="2"><input type="password" name="pwd1"></td>
+			</tr>
+			<tr>
+				<td>昵称：</td>
+				<td colspan="2"><input type="text" name="nic"></td>
+			</tr>
+			<tr>
+				<td>性别：</td>
+				<td colspan="2"><input type="radio" name="sex" id="nan"><label
+					for="nan"></label>男<input type="radio" name="sex" id="nv"><label
+					for="nv"></label>女</td>
+			</tr>
+			<tr>
+				<td>爱好：</td>
+				<td colspan="2"><input type="checkbox" name="hobby" value="lq">篮球<input
+					type="checkbox" name="hobby" value="yx">游戏<input
+					type="checkbox" name="hobby" checked="checked" value="dm">代码</td>
+			</tr>
+			<tr>
+				<td>生日：</td>
+				<td colspan="2"><input type="date" name="sr"></td>
+			</tr>
+			<tr>
+				<td>头像：</td>
+				<td colspan="2"><input type="file" name="tp"></td>
+			</tr>
+
+			<tr>
+				<td>城市：</td>
+				<td colspan="2"><select name="city"><option>请选择</option>
+						<option value="bj" selected="selected">北京</option>
+						<option value="sh">上海</option>
+						<option value="gz">广州</option></select></td>
+			</tr>
+			<tr>
+				<td>自我介绍：</td>
+				<td colspan="2"><textarea rows="3" cols="20" name="intro">说点什么</textarea></td>
+			</tr>
+			<tr>
+				<td>验证码：</td>
+				<td colspan="2"><img alt="" src="../imgs/a.jpg" height="25px"></td>
+			</tr>
+			<tr align="center">
+				<td colspan="4"><input type="submit" value="注册"><input type="reset" value="重置"></td>
+			
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

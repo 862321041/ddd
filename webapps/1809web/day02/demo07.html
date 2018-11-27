@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form表单</title>
+</head>
+<body>
+	<!-- action提交地址,method提交方式：get将请求参数放在请求地址的后面、post是将请求参数放在请求体里面 -->
+	<form action="http://www.baidu.cn" method="get"
+		style="text-align: center;">
+		<!-- name：作为传递参数的key，必须写，不写则不会传递该参数
+	value:设置初始默认值
+	maxlength:最大长度
+	readonly:只读 -->
+		用户名：<input type="text" placeholder="请输入用户名？" name="username"
+			value="abc" maxlength="5" readonly="readonly"><br>
+		<!--  -->
+		密码：<input type="password" name="password" placeholder="请输入密码？"><br>
+		<!-- 单选框 -->
+		性别：<input name="gender" type="radio" value="nan" id="nan"
+			checked="checked"><label for="nan">男</label> <input
+			name="gender" type="radio" value="nv" id="nv"><label for="nv">女</label><br>
+		<!-- 多选框 -->
+		兴趣爱好：<input type="checkbox" name="hobby" value="lq">打篮球 <input
+			type="checkbox" name="hobby" value="code" checked="checked">代码
+		<input type="checkbox" name="hobby" value="yx">游戏
+		<!-- 日期选择器 -->
+		<br>生日：<input type="date" name="birthay"><br>
+		<!-- 文件选择器 -->
+		靓照：<input type="file" name="pic"> <br>
+		<!-- 下拉框 -->
+		所在城市：<select name="city"><option>请选择</option>
+			<option value="bj" selected="selected">北京</option>
+			<option value="sh">上海</option>
+			<option value="gz">广州</option></select><br>
+		<!-- 文本域 -->
+		个人简介：
+		<textarea rows="3" cols="20" name="intro">这家伙很浪，什么都没有留下。。。</textarea>
+		<br>
+		<!-- 隐藏域 ：当需要给服务器传递某些不需要给用户展示的信息时使用-->
+		<input type="hidden" name="xxx" value="yyy"><br>
+		<!--  -->
+		<input type="submit" value="提交">
+		<!-- 重置 -->
+		<input type="reset">
+		<!-- 按钮 -->
+		<input type="button" value="自定义按钮">
+
+	</form>
+</body>
+</html>

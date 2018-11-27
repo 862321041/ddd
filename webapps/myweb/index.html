@@ -1,0 +1,25 @@
+<html>
+<head>
+<!-- head标签中包含的内容有页面的元数据样式，脚本等内容。这些都不是在浏览器中直接展现给用户看的元素 -->
+<meta charset="utf-8">
+<title>我的首页</title>
+</head>
+<body>
+	<center>
+		
+		<div>
+		<!-- 
+		页面上的相对路径中“当前目录”指的是当前页面所在目录。
+		例如下面的src="baidu.png"
+		那么浏览器认为该图片的路径就是在当前目录中。
+		而浏览器在请求当前页面index.html时使用的路径为：http：//localhost:8088/myweb/index.html
+		所以，浏览器会再次发起请求，路径为：
+		http：//localhost:8088/myweb/logo.png来索取图片
+		 -->
+		<img src="baidu.png"> </div>
+		<input type="text" size="30"> <input
+			type="button" value="百度一下" onClick="window.open('www.baidu.com') " > <a
+			href="http://www.baidu.com"><h1>点击进入</h1> </a>
+	</center>
+</body>
+</html>
